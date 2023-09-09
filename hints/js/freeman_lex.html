@@ -1,0 +1,99 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        I have no idea how to start solving this mission.
+    </div>
+    <div class="answer">
+        <p>
+            Catch an idea 💡! This mission is actually very simple. Use a single string method to replace a target substring with a new one all over the text.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ok, what should I start from?
+    </div>
+    <div class="answer">
+        <p>
+            You need <a target="_blank" href="https://www.w3schools.com/jsref/jsref_replace.asp">string.replace()</a>...
+        </p>
+        <pre class="brush: javascript">
+mainText.replace(target, repl)
+        </pre>
+        <p>
+            but this expression replaces only the first occurrence.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        How to replace all substrings?
+    </div>
+    <div class="answer">
+        <p>
+            You need to create a new <a target="_blank" href="https://www.w3schools.com/jsref/jsref_obj_regexp.asp">regular expression</a> based on <b class="code">target</b> and global modifier for search and replace all over the text.
+        </p>
+        <pre class="brush: javascript">
+new RegExp(target, 'g')
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        What to do next?
+    </div>
+    <div class="answer">
+        <p>
+            The method <b class="code">replace()</b> returns a new string, which you may immediately return out of the function. 
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        So, how my final solution should look like?
+    </div>
+    <div class="answer">
+        <p>
+            You just need to join all previous hints and wrap your code into function expression. Using type hints for input and output data are highly recommended.
+        </p>
+        <p>Here is the whole solution:</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function replaceAll(mainText: string, target: string, replacement: string): string {
+
+    return mainText.replace(new RegExp(target, 'g'), replacement);
+}
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Show me more solutions!<br />
+        'Cause I wanna be a real 🥇 Javascript Hero!
+    </div>
+    <div class="answer">
+        <p>Sure, grab it!</p>
+        <p>
+            Split the given text by target substring (all occurrences removed) and join parts back with a new string.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function replaceAll(mainText: string, target: string, replacement: string): string {
+
+    return mainText.split(target).join(replacement);
+}
+        </pre>
+        </div>
+        <p>Click <b>Best Solutions</b> at mission menu and see a lot of other interesting solutions!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Thanks! I know and understand more now! Everything works fine!
+    </div>
+    <div class="answer">
+        Glad to hear it 👍!
+    </div>
+</div>
+</body>
