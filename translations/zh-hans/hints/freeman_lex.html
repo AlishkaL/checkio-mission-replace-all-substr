@@ -1,0 +1,81 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        我不知道如何开始解决这个任务。
+    </div>
+    <div class="answer">
+        <p>
+            出个主意💡！这个任务其实很简单。使用单字符串方法将目标子字符串替换为文本中的所有新字符串。
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        好吧，我应该从什么开始呢？
+    </div>
+    <div class="answer">
+        <p>
+            您需要不带第三个参数的<a target="_blank" href="https://www.w3schools.com/python/ref_string_replace.asp">str.replace()</a> ，因为您想替换所有出现的内容。
+        </p>
+        <pre class="brush: python">
+mainText.replace(target, repl)
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        下一步该怎么做？
+    </div>
+    <div class="answer">
+        <p>
+            此方法返回一个新字符串，您可以立即将其从函数中返回。 
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        那么，我的最终解决方案应该是怎样的呢？
+    </div>
+    <div class="answer">
+        <p>
+            您只需将之前所有的提示连接起来，然后将代码封装成函数表达式即可。强烈建议对输入和输出数据使用类型提示。
+        </p>
+        <p>以下是整个解决方案：</p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def replace_all(mainText: str, target: str, repl: str) -> str:
+
+    return mainText.replace(target, repl)
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        向我展示更多解决方案！<br />
+        因为我想成为一个真正的 🥇 Python Ninnjaa！
+    </div>
+    <div class="answer">
+        <p>当然，抓紧时间！</p>
+        <p>
+            按目标子串分割给定文本（删除所有出现的子串），然后用新字符串连接各部分。
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def replace_all(mainText: str, target: str, repl: str) -> str:
+
+    return repl.join(mainText.split(target))
+        </pre>
+        </div>
+        <p>点击任务菜单<b>Best Solutions</b> ，查看更多有趣的解决方案！</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        谢谢！我现在知道并理解得更多了！一切正常！
+    </div>
+    <div class="answer">
+        很高兴听到这个消息 👍！
+    </div>
+</div>
+</body>
