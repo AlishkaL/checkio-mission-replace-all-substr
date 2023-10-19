@@ -1,0 +1,99 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Nie mam pojęcia, jak zacząć rozwiązywać tę misję.
+    </div>
+    <div class="answer">
+        <p>
+            Proszę złapać jakiś pomysł 💡! Ta misja jest w rzeczywistości bardzo prosta. Proszę użyć metody pojedynczego ciągu, aby zastąpić docelowy podciąg nowym w całym tekście.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ok, od czego powinienem zacząć?
+    </div>
+    <div class="answer">
+        <p>
+            Potrzebuje Pan <a target="_blank" href="https://www.w3schools.com/jsref/jsref_replace.asp">string.replace()</a>...
+        </p>
+        <pre class="brush: javascript">
+mainText.replace(target, repl)
+        </pre>
+        <p>
+            ale to wyrażenie zastępuje tylko pierwsze wystąpienie.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Jak zastąpić wszystkie podciągi?
+    </div>
+    <div class="answer">
+        <p>
+            Proszę utworzyć nowy <a target="_blank" href="https://www.w3schools.com/jsref/jsref_obj_regexp.asp">regular expression</a> na podstawie <b class="code">target</b> i globalnego modyfikatora do wyszukiwania i zastępowania całego tekstu.
+        </p>
+        <pre class="brush: javascript">
+new RegExp(target, 'g')
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Co robić dalej?
+    </div>
+    <div class="answer">
+        <p>
+            Metoda <b class="code">replace()</b> zwraca nowy ciąg znaków, który można natychmiast zwrócić z funkcji. 
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Jak więc powinno wyglądać moje ostateczne rozwiązanie?
+    </div>
+    <div class="answer">
+        <p>
+            Wystarczy połączyć wszystkie poprzednie podpowiedzi i zawinąć kod w wyrażenie funkcyjne. Używanie podpowiedzi typu dla danych wejściowych i wyjściowych jest wysoce zalecane.
+        </p>
+        <p>Poniżej znajduje się całe rozwiązanie:</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function replaceAll(mainText: string, target: string, replacement: string): string {
+
+    return mainText.replace(new RegExp(target, 'g'), replacement);
+}
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Proszę pokazać mi więcej rozwiązań!<br />
+        bo chcę być prawdziwym 🥇 bohaterem Javascript!
+    </div>
+    <div class="answer">
+        <p>Jasne, proszę pobrać!</p>
+        <p>
+            Proszę podzielić podany tekst przez docelowy podciąg (usuwając wszystkie wystąpienia) i połączyć części z powrotem z nowym ciągiem.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function replaceAll(mainText: string, target: string, replacement: string): string {
+
+    return mainText.split(target).join(replacement);
+}
+        </pre>
+        </div>
+        <p>Proszę kliknąć <b>Best Solutions</b> w menu misji i zobaczyć wiele innych ciekawych rozwiązań!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Dzięki! Teraz wiem i rozumiem więcej! Wszystko działa jak należy!
+    </div>
+    <div class="answer">
+        Miło mi to słyszeć 👍!
+    </div>
+</div>
+</body>
