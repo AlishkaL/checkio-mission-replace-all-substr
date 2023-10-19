@@ -1,0 +1,99 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        我不知道如何开始解决这个任务。
+    </div>
+    <div class="answer">
+        <p>
+            出个主意💡！这个任务其实很简单。使用单字符串方法将目标子字符串替换为文本中的所有新字符串。
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        好吧，我应该从什么开始呢？
+    </div>
+    <div class="answer">
+        <p>
+            您需要<a target="_blank" href="https://www.w3schools.com/jsref/jsref_replace.asp">string.replace()</a>...
+        </p>
+        <pre class="brush: javascript">
+mainText.replace(target, repl)
+        </pre>
+        <p>
+            但该表达式只替换第一次出现的内容。
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        如何替换所有子串？
+    </div>
+    <div class="answer">
+        <p>
+            您需要在<b class="code">target</b> 和全局修改器的基础上创建一个新的<a target="_blank" href="https://www.w3schools.com/jsref/jsref_obj_regexp.asp">regular expression</a> ，用于搜索和替换所有文本。
+        </p>
+        <pre class="brush: javascript">
+new RegExp(target, 'g')
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        下一步该怎么做？
+    </div>
+    <div class="answer">
+        <p>
+            <b class="code">replace()</b> 方法返回一个新字符串，您可以立即将其从函数中返回。 
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        那么，我的最终解决方案应该是怎样的呢？
+    </div>
+    <div class="answer">
+        <p>
+            您只需将之前所有的提示连接起来，然后将代码封装成函数表达式即可。强烈建议对输入和输出数据使用类型提示。
+        </p>
+        <p>以下是整个解决方案：</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function replaceAll(mainText: string, target: string, replacement: string): string {
+
+    return mainText.replace(new RegExp(target, 'g'), replacement);
+}
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        向我展示更多解决方案！<br />
+        因为我想成为真正的 🥇 Javascript 英雄！
+    </div>
+    <div class="answer">
+        <p>当然，抓紧时间！</p>
+        <p>
+            按目标子串分割给定文本（删除所有出现的子串），然后用新字符串连接各部分。
+        </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function replaceAll(mainText: string, target: string, replacement: string): string {
+
+    return mainText.split(target).join(replacement);
+}
+        </pre>
+        </div>
+        <p>点击任务菜单<b>Best Solutions</b> ，查看更多有趣的解决方案！</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        谢谢！我现在知道并理解得更多了！一切正常！
+    </div>
+    <div class="answer">
+        很高兴听到这个消息 👍！
+    </div>
+</div>
+</body>
