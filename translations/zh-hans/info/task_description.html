@@ -1,0 +1,46 @@
+<!-- Describe task in general -->
+
+<p>
+    该函数应接受三个字符串作为输入：主文本、目标子字符串和替换子字符串。它应返回一个新字符串，其中主文本中所有出现的目标子字符串都被替换为替换子字符串。  
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}replace-all-occur.png" alt="example" style="max-height: 200px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入</strong>三个字符串 <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出： 字符串</strong>字符串 <span>(str{% if is_js %}ing{% endif %})</span>. 
+</p>
+
+<p>
+    <strong>示例</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<p class="for_info_only">
+
+    <strong>如何使用</strong>
+    <ul>
+        <li><i>文本编辑器中的查找和替换功能；</i></li>
+        <li><i>在数据转换工具中用于标准化或清理数据；</i></li>
+        <li><i>在网站模板系统中，用实际内容替换占位符。</i></li>
+    </ul>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>前提条件</strong>
+    <ul>
+        <li><i>所有输入均应为字符串：mainText、target、replacement ∈ string；</i></li>
+        <li><i>target 不能是空字符串：length(target) &gt; 0。</i></li>
+    </ul>
+</p>
