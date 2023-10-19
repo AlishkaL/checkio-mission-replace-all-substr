@@ -1,0 +1,46 @@
+<!-- Describe task in general -->
+
+<p>
+    Ця функція повинна приймати на вхід три рядки: основний текст, шуканий підрядок і підрядок-замінник. Вона повинна повернути новий рядок, у якому всі входження цільового підрядка в основному тексті замінено на підрядок-замінник.  
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}replace-all-occur.png" alt="example" style="max-height: 200px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Вхідні дані:</strong> Три рядки <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Вихідні дані:</strong> Рядок <span>(str{% if is_js %}ing{% endif %})</span>. 
+</p>
+
+<p>
+    <strong>Приклади:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<p class="for_info_only">
+
+    <strong>Як використовується:</strong>
+    <ul>
+        <li><i>у текстових редакторах для функції пошуку та заміни;</i></li>
+        <li><i>в інструментах перетворення даних для стандартизації або очищення даних;</i></li>
+        <li><i>у системах шаблонів веб-сайтів для заміни заповнювачів на реальний вміст.</i></li>
+    </ul>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Передумови:</strong>
+    <ul>
+        <li><i>всі вхідні дані мають бути рядками: mainText, target, replacement ∈ string;</i></li>
+        <li><i>ціль не повинна бути порожнім рядком: length(target) &gt; 0.</i></li>
+    </ul>
+</p>
