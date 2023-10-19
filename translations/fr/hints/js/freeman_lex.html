@@ -1,0 +1,99 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Je n'ai aucune idée de la manière de commencer à résoudre cette mission.
+    </div>
+    <div class="answer">
+        <p>
+            Attrapez une idée 💡! Cette mission est en fait très simple. Utilisez une méthode de chaîne unique pour remplacer une sous-chaîne cible par une nouvelle sur l'ensemble du texte.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ok, par quoi dois-je commencer?
+    </div>
+    <div class="answer">
+        <p>
+            Vous avez besoin de <a target="_blank" href="https://www.w3schools.com/jsref/jsref_replace.asp">string.replace()</a>...
+        </p>
+        <pre class="brush: javascript">
+mainText.replace(target, repl)
+        </pre>
+        <p>
+            mais cette expression ne remplace que la première occurrence.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Comment remplacer toutes les sous-chaînes?
+    </div>
+    <div class="answer">
+        <p>
+            Vous devez créer un nouveau site <a target="_blank" href="https://www.w3schools.com/jsref/jsref_obj_regexp.asp">regular expression</a> basé sur <b class="code">target</b> et un modificateur global pour rechercher et remplacer tout le texte.
+        </p>
+        <pre class="brush: javascript">
+new RegExp(target, 'g')
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Que faire ensuite?
+    </div>
+    <div class="answer">
+        <p>
+            La méthode <b class="code">replace()</b> renvoie une nouvelle chaîne de caractères, que vous pouvez immédiatement renvoyer hors de la fonction. 
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Alors, à quoi devrait ressembler ma solution finale?
+    </div>
+    <div class="answer">
+        <p>
+            Il vous suffit de combiner tous les indices précédents et d'envelopper votre code dans une expression de fonction. Il est fortement recommandé d'utiliser des indications de type pour les données d'entrée et de sortie.
+        </p>
+        <p>Voici la solution complète:</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function replaceAll(mainText: string, target: string, replacement: string): string {
+
+    return mainText.replace(new RegExp(target, 'g'), replacement);
+}
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Montrez-moi d'autres solutions!<br />
+        parce que je veux être un vrai 🥇 Javascript Hero!
+    </div>
+    <div class="answer">
+        <p>Bien sûr, prenez-le!</p>
+        <p>
+            Divisez le texte donné par la sous-chaîne cible (toutes les occurrences sont supprimées) et réunissez les parties en une nouvelle chaîne.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function replaceAll(mainText: string, target: string, replacement: string): string {
+
+    return mainText.split(target).join(replacement);
+}
+        </pre>
+        </div>
+        <p>Cliquez sur <b>Best Solutions</b> dans le menu mission et découvrez de nombreuses autres solutions intéressantes!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Merci beaucoup! J'en sais plus et je comprends mieux maintenant! Tout fonctionne bien!
+    </div>
+    <div class="answer">
+        Heureux de l'apprendre 👍!
+    </div>
+</div>
+</body>

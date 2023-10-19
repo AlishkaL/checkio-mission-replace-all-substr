@@ -1,0 +1,81 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Je n'ai aucune idée de la manière de commencer à résoudre cette mission.
+    </div>
+    <div class="answer">
+        <p>
+            Attrapez une idée 💡! Cette mission est en fait très simple. Utilisez une méthode de chaîne unique pour remplacer une sous-chaîne cible par une nouvelle sur l'ensemble du texte.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ok, par quoi dois-je commencer?
+    </div>
+    <div class="answer">
+        <p>
+            Vous avez besoin de <a target="_blank" href="https://www.w3schools.com/python/ref_string_replace.asp">str.replace()</a> sans le troisième argument puisque vous voulez remplacer toutes les occurrences.
+        </p>
+        <pre class="brush: python">
+mainText.replace(target, repl)
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Que faire ensuite?
+    </div>
+    <div class="answer">
+        <p>
+            Cette méthode renvoie une nouvelle chaîne de caractères, que vous pouvez immédiatement renvoyer hors de la fonction. 
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Alors, à quoi devrait ressembler ma solution finale?
+    </div>
+    <div class="answer">
+        <p>
+            Il vous suffit de combiner tous les indices précédents et d'envelopper votre code dans une expression de fonction. Il est fortement recommandé d'utiliser des indications de type pour les données d'entrée et de sortie.
+        </p>
+        <p>Voici la solution complète:</p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def replace_all(mainText: str, target: str, repl: str) -> str:
+
+    return mainText.replace(target, repl)
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Montrez-moi d'autres solutions!<br />
+        parce que je veux être une vraie 🥇 Python Ninnjaa!
+    </div>
+    <div class="answer">
+        <p>Bien sûr, prenez-le!</p>
+        <p>
+            Divisez le texte donné par la sous-chaîne cible (toutes les occurrences sont supprimées) et joignez les parties pour obtenir une nouvelle chaîne.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def replace_all(mainText: str, target: str, repl: str) -> str:
+
+    return repl.join(mainText.split(target))
+        </pre>
+        </div>
+        <p>Cliquez sur <b>Best Solutions</b> dans le menu mission et découvrez de nombreuses autres solutions intéressantes!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Merci beaucoup! J'en sais plus et je comprends mieux maintenant! Tout fonctionne bien!
+    </div>
+    <div class="answer">
+        Heureux de l'apprendre 👍!
+    </div>
+</div>
+</body>

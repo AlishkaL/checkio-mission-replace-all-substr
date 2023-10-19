@@ -1,0 +1,46 @@
+<!-- Describe task in general -->
+
+<p>
+    Cette fonction doit prendre trois chaînes en entrée: le texte principal, la sous-chaîne cible et la sous-chaîne de remplacement. Elle doit renvoyer une nouvelle chaîne dans laquelle toutes les occurrences de la sous-chaîne cible dans le texte principal sont remplacées par la sous-chaîne de remplacement.  
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}replace-all-occur.png" alt="example" style="max-height: 200px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Trois chaînes de caractères <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Sortie:</strong> Chaîne <span>(str{% if is_js %}ing{% endif %})</span>. 
+</p>
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<p class="for_info_only">
+
+    <strong>Comment il est utilisé:</strong>
+    <ul>
+        <li><i>dans les éditeurs de texte pour les fonctions de recherche et de remplacement;</i></li>
+        <li><i>dans les outils de transformation des données pour normaliser ou nettoyer les données;</i></li>
+        <li><i>dans les systèmes de modèles de sites web pour remplacer les espaces réservés par du contenu réel.</i></li>
+    </ul>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Conditions préalables:</strong>
+    <ul>
+        <li><i>toutes les entrées doivent être des chaînes: texte principal, cible, remplacement ∈ chaîne;</i></li>
+        <li><i>la cible ne doit pas être une chaîne vide: length(target) &gt; 0.</i></li>
+    </ul>
+</p>
