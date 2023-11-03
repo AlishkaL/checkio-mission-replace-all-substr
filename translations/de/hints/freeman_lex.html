@@ -1,0 +1,81 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Ich habe keine Ahnung, wie ich mit der Lösung dieser Aufgabe beginnen soll.
+    </div>
+    <div class="answer">
+        <p>
+            Lassen Sie sich etwas einfallen 💡! Diese Aufgabe ist eigentlich sehr einfach. Verwenden Sie eine einzelne String-Methode, um eine Zielteilzeichenkette im gesamten Text durch eine neue zu ersetzen.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ok, womit soll ich anfangen?
+    </div>
+    <div class="answer">
+        <p>
+            Sie benötigen <a target="_blank" href="https://www.w3schools.com/python/ref_string_replace.asp">str.replace()</a> ohne das dritte Argument, da Sie alle Vorkommen ersetzen möchten.
+        </p>
+        <pre class="brush: python">
+mainText.replace(target, repl)
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Was tun Sie als nächstes?
+    </div>
+    <div class="answer">
+        <p>
+            Diese Methode gibt einen neuen String zurück, den Sie sofort aus der Funktion heraus zurückgeben können. 
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Wie sollte also meine endgültige Lösung aussehen?
+    </div>
+    <div class="answer">
+        <p>
+            Sie müssen nur alle vorherigen Hinweise zusammenführen und Ihren Code in einen Funktionsausdruck verpacken. Die Verwendung von Typ-Hinweisen für Eingabe- und Ausgabedaten wird dringend empfohlen.
+        </p>
+        <p>Hier ist die gesamte Lösung:</p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def replace_all(mainText: str, target: str, repl: str) -> str:
+
+    return mainText.replace(target, repl)
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Zeigen Sie mir mehr Lösungen!<br />
+        denn ich will ein echter 🥇 Python Ninnjaa sein!
+    </div>
+    <div class="answer">
+        <p>Klar, schnapp sie dir!</p>
+        <p>
+            Teilen Sie den gegebenen Text nach der Zielteilzeichenkette auf (alle Vorkommen werden entfernt) und fügen Sie die Teile wieder zu einer neuen Zeichenkette zusammen.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def replace_all(mainText: str, target: str, repl: str) -> str:
+
+    return repl.join(mainText.split(target))
+        </pre>
+        </div>
+        <p>Klicken Sie im Missionsmenü auf <b>Best Solutions</b> und sehen Sie sich eine Reihe weiterer interessanter Lösungen an!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Vielen Dank! Ich weiß und verstehe jetzt mehr! Alles funktioniert bestens!
+    </div>
+    <div class="answer">
+        Freut mich zu hören 👍!
+    </div>
+</div>
+</body>
