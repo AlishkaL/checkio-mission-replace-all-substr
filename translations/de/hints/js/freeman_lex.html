@@ -1,0 +1,99 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Ich habe keine Ahnung, wie ich mit der Lösung dieser Aufgabe beginnen soll.
+    </div>
+    <div class="answer">
+        <p>
+            Lassen Sie sich etwas einfallen 💡! Diese Aufgabe ist eigentlich sehr einfach. Verwenden Sie eine einzelne String-Methode, um eine Zielteilzeichenkette im gesamten Text durch eine neue zu ersetzen.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ok, womit soll ich anfangen?
+    </div>
+    <div class="answer">
+        <p>
+            Sie brauchen <a target="_blank" href="https://www.w3schools.com/jsref/jsref_replace.asp">string.replace()</a>...
+        </p>
+        <pre class="brush: javascript">
+mainText.replace(target, repl)
+        </pre>
+        <p>
+            aber dieser Ausdruck ersetzt nur das erste Vorkommen.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Wie kann ich alle Teilzeichenfolgen ersetzen?
+    </div>
+    <div class="answer">
+        <p>
+            Sie müssen ein neues <a target="_blank" href="https://www.w3schools.com/jsref/jsref_obj_regexp.asp">regular expression</a> erstellen, das auf <b class="code">target</b> und dem globalen Modifikator für Suchen und Ersetzen im gesamten Text basiert.
+        </p>
+        <pre class="brush: javascript">
+new RegExp(target, 'g')
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Was ist als nächstes zu tun?
+    </div>
+    <div class="answer">
+        <p>
+            Die Methode <b class="code">replace()</b> gibt einen neuen String zurück, den Sie sofort aus der Funktion heraus zurückgeben können. 
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Wie sollte also meine endgültige Lösung aussehen?
+    </div>
+    <div class="answer">
+        <p>
+            Sie müssen nur alle vorherigen Hinweise zusammenführen und Ihren Code in einen Funktionsausdruck verpacken. Die Verwendung von Typ-Hinweisen für Eingabe- und Ausgabedaten wird dringend empfohlen.
+        </p>
+        <p>Hier ist die gesamte Lösung:</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function replaceAll(mainText: string, target: string, replacement: string): string {
+
+    return mainText.replace(new RegExp(target, 'g'), replacement);
+}
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Zeigen Sie mir mehr Lösungen!<br />
+        denn ich möchte ein echter 🥇 Javascript-Held sein!
+    </div>
+    <div class="answer">
+        <p>Klar, schnappen Sie es sich!</p>
+        <p>
+            Teilen Sie den angegebenen Text nach der Zielteilzeichenkette auf (alle Vorkommen werden entfernt) und fügen Sie die Teile wieder zu einer neuen Zeichenkette zusammen.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function replaceAll(mainText: string, target: string, replacement: string): string {
+
+    return mainText.split(target).join(replacement);
+}
+        </pre>
+        </div>
+        <p>Klicken Sie im Missionsmenü auf <b>Best Solutions</b> und sehen Sie sich eine Reihe weiterer interessanter Lösungen an!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Vielen Dank! Ich weiß und verstehe jetzt mehr! Alles funktioniert bestens!
+    </div>
+    <div class="answer">
+        Freut mich zu hören 👍!
+    </div>
+</div>
+</body>

@@ -1,0 +1,46 @@
+<!-- Describe task in general -->
+
+<p>
+    Diese Funktion sollte drei Zeichenfolgen als Eingabe erhalten: den Haupttext, die Zielteilzeichenkette und die Ersatzteilzeichenkette. Sie sollte eine neue Zeichenkette zurückgeben, in der alle Vorkommen der Zielteilzeichenkette im Haupttext durch die Ersatzteilzeichenkette ersetzt werden.  
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}replace-all-occur.png" alt="example" style="max-height: 200px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Drei Zeichenketten <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> String <span>(str{% if is_js %}ing{% endif %})</span>. 
+</p>
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<p class="for_info_only">
+
+    <strong>Wie es verwendet wird:</strong>
+    <ul>
+        <li><i>in Texteditoren für die Funktion Suchen und Ersetzen;</i></li>
+        <li><i>in Tools zur Datenumwandlung, um Daten zu standardisieren oder zu bereinigen;</i></li>
+        <li><i>in Website-Vorlagensystemen, um Platzhalter durch tatsächlichen Inhalt zu ersetzen.</i></li>
+    </ul>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Vorbedingungen:</strong>
+    <ul>
+        <li><i>alle Eingaben sollten Strings sein: mainText, target, replacement ∈ string;</i></li>
+        <li><i>das Ziel sollte kein leerer String sein: length(target) &gt; 0.</i></li>
+    </ul>
+</p>
